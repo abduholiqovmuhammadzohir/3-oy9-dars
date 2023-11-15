@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 16px;
+    background-color: #F8F8F8;
+    margin-bottom:50px;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.content-wrapper .saidbar {
+    width: 250px;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* saidbar styles */
+
+.saidbar .logo {
+    height: 20%;
+}
+
+.saidbar .logo a {
+    color: #013CC6;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 29px;
+    text-decoration: none;
+}
+
+.saidbar nav {
+    height: 80%;
+}
+
+.saidbar li {
+    margin-left: 30px;
+    list-style: none;
+    margin-bottom: 41px;
+}
+
+.saidbar li svg {
+    transition: all 1s;
+}
+
+.saidbar li svg:hover {
+    fill: #0B63F8;
+}
+
+.saidbar li:last-child {
+    margin-bottom: 0px;
+}
+
+.saidbar li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 16px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    opacity: 0.65;
+    transition: all 1s;
+}
+
+.saidbar li a:hover {
+    color: #0B63F8;
+}
+
+.help a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 31px;
+    opacity: 0.65;
+    color: #131313;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-decoration: none;
+}
+
+.help a span:hover {
+    color: #0B63F8;
+}
+
+.help a svg:hover {
+    fill: #0B63F8;
+}
+
+/* main styles */
+
+.main {
+    margin-left: 291px;
+    margin-top: 56px;
+}
+
+.main .input input {
+    padding-left: 60px;
+    width: 655px;
+    height: 52px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    margin-bottom: 43px;
+}
+
+.main .input {
+    position: relative;
+}
+
+.main .input img {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+.main .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    margin-left: 410px;
+    margin-top: -45px;
+    cursor: pointer;
+}
+
+.call .notif {
+    background-color: white;
+    padding: 14px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.notif .dot {
+    position: absolute;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: orange;
+    right: -3px;
+    top: -3px;
+}
+
+.sales h3 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.dates h4 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.dates input {
+    width: 266px;
+    display: inline-flex;
+    height: 50px;
+    padding: 13px 66px 13px 24px;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid rgba(19, 19, 19, 0.25);
+    background: #FFF;
+    color: rgba(19, 19, 19, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+table {
+    width: 1200px;
+    text-align: start;
+    padding-top: 24px;
+    background-color: white;
+}
+
+table tr input {
+    margin-left:24px;
+    width: 20px;
+    height: 20px;
+}
+
+th {
+    padding-bottom: 29px;
+    text-align: start;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 1s;
+    padding-top:20px;
+}
+
+th:hover{
+    color: #c3ff00;
+    background-image: radial-gradient(circle, #54d828 0%,#37eee5 0%,  #4b90d4 100%);
+}
+
+tr {
+    transition: all 1s;
+}
+
+
+tr:hover{
+    background-color: #0B63F8;
+    cursor: pointer;  
+}
+
+td:hover{
+    background-image: radial-gradient(circle, #255e5c 0%, #00d5ff 100%);
+    color: rgb(145, 255, 0);
+}
+td span:hover{
+    color: rgb(145, 255, 0);
+}
+
+td {
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+    padding-top:30px;
+    padding-left: 0px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 1s;
+}
+
+td span {
+    color: #0B63F8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 1s;
+}
